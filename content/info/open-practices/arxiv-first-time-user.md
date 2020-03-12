@@ -20,10 +20,7 @@ You will need:
 After your account is created, you can view your current submissions and create new ones from
 [https://arxiv.org/user/](https://arxiv.org/user/)
 
-**Note for Overleaf users (!):**  If you are using Overleaf, the easiest way to prepare a submission is to use the "Submit" button on Overleaf and scroll down to arXiv, download a zip file with all the needed files for your paper, and then click on the Submit button that takes you directly to arXiv pages for a new submission. Also see **Note-2** below.
-
-![]({{ 'content/info/open-practices/arxiv_guide_1.png' | relative_url }})
-  
+![]({{ 'content/info/open-practices/arxiv_guide_1.png' | relative_url }}) 
 
 ## Step-3.Complete the submission process
  
@@ -90,7 +87,7 @@ In the following, we are highlighting a number of issues and key steps to be awa
 
 **Renaming ``.tex`` files** If you have multiple files, arXiv usually infers what your main file is, however, you can name the main TeX file `ms.tex` to make sure that it is the file that is processed first. Note that you will need to rename your `.bib` file as `ms.bib` as well. 
 
-**Getting references to work, i.e., including the `bbl` file:** One step that needs pointing out here is the requirement to use `.bbl` files to get your references included in the output. This is due to arXiv's compiler not running the BibTeX command. Luckily, tt's easy to produce the `.bbl` file. Once you compile your paper in any TeX editor, the `.bbl` file should be in the directory as a bi-product, just include that in the files to be submitted to arXiv. Make sure that the `.bbl` file has the same name as the main `.tex` file.
+**Getting references to work, i.e., including the `bbl` file:** One step that needs pointing out here is the requirement to use `.bbl` files to get your references included in the output. This is due to arXiv's compiler not running the BibTeX command. Luckily, it's easy to produce the `.bbl` file. Once you compile your paper in any TeX editor, the `.bbl` file should be in the directory as a by-product, just include that in the files to be submitted to arXiv. Make sure that the `.bbl` file has the same name as the main `.tex` file.
 
 **Submitting files in bulk:** One step you might find tedious is to submit all the individual files separately. What you can do speed this up is to submit a packaged folder with all your files. The arXiv manual provides further guidance [here](https://arxiv.org/help/submit_tex):
 
@@ -103,12 +100,3 @@ Or you can upload `tex` files separately and then put all images in a `zip` file
 **Compilation error that mentions "00README.XXX":** You might get a compilation error from arXiv's TeX compiler due to a clash between arXiv's `HyperTeX` package with a few style and class files. If that's the case, this will be highlighted in the error logs. You can add a new file named `00README.XXX` and add the text `nohypertex` in it to address this issue.
 
 **Other common mistakes:** There are a few other issues that can make the autocompiler break. [This guidance](https://arxiv.org/help/faq/mistakes) on arXiv highlights those common mistakes and your issue might be mentioned in there as well.
-
-### Note-2: Overleaf users
-
-**When creating a submission:** If you are using Overleaf, the easiest way to prepare a submission is to use the "*Submit*" button on Overleaf and scroll down to arXiv, download a zip file with all the needed files for your paper, and then click on the *Submit* button that takes you directly to arXiv pages with a new submission created. You can then follow Step-3 and onwards in the main guidance.
-
-Alternatively, Overleaf provides you a zip file for streamlining your arXiv submission by providing this `.zip` file available for download. You can simply download the `.zip` file and it will have all the files needed, including the `.bbl` file for the references.
-
-
-**When revising a submission (i.e., following Step-5):** Overleaf does not offer a "*resubmit*" button. You will need to download a `zip` file and replace the files on arXiv that has changed following the above guidance on **Step-5**.
